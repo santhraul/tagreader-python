@@ -468,6 +468,8 @@ class IMSClient:
 
         Values for ReaderType.* that should work for all handlers are:
             INT, RAW, MIN, MAX, RNG, AVG, VAR, STD and SNAPSHOT
+        
+        tags: Modified to read list of webIDs as search function tag_to_webid in webhandler.py is not working.
         """
 
         if isinstance(tags, str):

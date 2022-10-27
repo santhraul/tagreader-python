@@ -836,7 +836,8 @@ class PIHandlerWeb:
         metadata=None,
         get_status=False,
     ):
-        webid = self.tag_to_webid(tag)
+        # webid = self.tag_to_webid(tag)
+        webid = tag # Search function for web ID was not working so entered webID as tag
         if not webid:
             return pd.DataFrame()
 
